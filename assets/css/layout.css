@@ -60,6 +60,15 @@ layout
 }
 
 /* columns */
+.col-narrow { background: pink; }
+.col-narrow--right { background: pink; }
+.col-medium { background: silver; }
+.col-wide { background: aqua; }
+.col-wide--right { background: aqua; }
+/* make images sit a bit away from text on small screens */
+.col-narrow, .col-narrow--right { margin-bottom: 1.5em;}
+ 
+
 
 /* ----------------------------
 wide
@@ -83,4 +92,26 @@ wide
         padding-left: 2em;
         padding-right: 2em;
     }
+    
+    /* float columns */
+        .col-narrow, .col-medium, .col-wide {
+            float: left;
+        }
+        
+        .col-narrow--right, .col-wide--right {
+            float: right;
+        }
+        
+        .col-wide, .col-wide--right {
+            width: 61%;
+        }
+    
+        .col-medium {
+            width: 50%;
+        }
+        
+        .col-narrow, .col-narrow--right {
+            width: 25%;
+            margin-bottom: 0;
+        }
 }
