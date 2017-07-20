@@ -36,6 +36,28 @@ layout
 }
 
 /* containers */
+.container-narrow, .container-medium, .container-wide {
+    /* centered inside the row */
+    margin: 0 auto;
+    /* little bit of gutter for small screens */
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.container-narrow {
+    max-width: 34em;
+    background: yellow;
+}
+
+.container-medium {
+    max-width: 52em;
+    background: green;
+}
+
+.container-wide {
+    max-width: 58em;
+    background: lime;
+}
 
 /* columns */
 
@@ -44,15 +66,21 @@ wide
 ---------------------------- */
 
 @media (min-width: 38em) {
-    .row--padding-medium {
-    /* 70px/18px */
-    padding-top: 3.8889em;
-    padding-bottom: 3.8889em;
-}
+        .row--padding-medium {
+        /* 70px/18px */
+        padding-top: 3.8889em;
+        padding-bottom: 3.8889em;
+    }
 
-.row--padding-wide {
-    /* 100px/18px */
-    padding-top: 5.5656em;
-    padding-bottom: 5.5656em;
-}
+        .row--padding-wide {
+        /* 100px/18px */
+        padding-top: 5.5656em;
+        padding-bottom: 5.5656em;
+    }
+    
+        .container-narrow, .container-medium, .container-wide {
+        /* bit more gutter for wide screens */
+        padding-left: 2em;
+        padding-right: 2em;
+    }
 }
