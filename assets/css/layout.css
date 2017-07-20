@@ -3,10 +3,37 @@ layout
 ---------------------------- */
 
 /* row */
+.row {
+    clear: both;
+    overflow: hidden;
+}
 
 /* row-colors */
+.row--white { background: #fff; }
+.row--grey { background: #f8f8f8; }
+.row--blue { background: #3bb2d0; }
+
+.row--dark-grey { 
+    color: #fff;
+    background: #282e37;
+}
+
+.row--banner {
+    background: #aaa;
+}
 
 /* row-padding */
+.row--padding-medium {
+    /* 35px/16px */
+    padding-top: 2.1875em;
+    padding-bottom: 2.1875em;
+}
+
+.row--padding-wide {
+    /* 35px/16px */
+    padding-top: 2.1875em;
+    padding-bottom: 2.1875em;
+}
 
 /* containers */
 
@@ -15,3 +42,17 @@ layout
 /* ----------------------------
 wide
 ---------------------------- */
+
+@media (min-width: 38em) {
+    .row--padding-medium {
+    /* 70px/18px */
+    padding-top: 3.8889em;
+    padding-bottom: 3.8889em;
+}
+
+.row--padding-wide {
+    /* 100px/18px */
+    padding-top: 5.5656em;
+    padding-bottom: 5.5656em;
+}
+}
