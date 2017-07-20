@@ -1,10 +1,77 @@
 /* ----------------------------
 banner
 ---------------------------- */
+.row--banner {
+    background-color: #626e6d;
+    background-image: url(../img/banner-small.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width: 38em) {
+    .row--banner {
+        background-image:  url(../img/banner.jpg); 
+    }
+}
 
 /* ----------------------------
 header
 ---------------------------- */
+
+.header {
+    /* 20px/16px 16px/16px */
+    padding: 1.25em 1em;
+    
+}
+
+.header__logo {
+    float: left;
+    padding-top: 0.2em;
+}
+
+.header__nav {
+    float: right;
+    width: 150px;
+}
+
+.header__nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+
+/* set inline-block turn off margin for li so they sit beside each other */ 
+
+.header__nav li {
+    display: inline-block;
+    margin: 0;
+}
+
+.header__nav a {
+    display: block;
+    margin-right: .2em;
+    padding: 0.6em 1em 0.4em;
+    color: #fff;
+    background: none;
+    font-size: 0.8125em; /* 13px/16px */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header__nav-content a {
+    margin-right: 0;
+}
+
+.current a {
+    background: #56b880;
+    color: #fff;
+}
+
+.header__nav a:focus { background: #000; }
+.header__nav a:hover { background: #000; }
+.header__nav a:active { background: #000; }
 
 /* ----------------------------
 banner-content
