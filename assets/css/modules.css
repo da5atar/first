@@ -166,9 +166,9 @@ features
 }
 
 @media (min-width: 50em) {
-    .features__bike { height: 90px; }
-    .features__phone { height: 149px; }
-    .features__safe { height: 80px; }
+    .features__bike { height: 154px; }
+    .features__phone { height: 296px; }
+    .features__safe { height: 141px; }
 }
 
 
