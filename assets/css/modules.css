@@ -244,11 +244,11 @@ testimonials
         font-weight: normal;
     }
     .testimonials__quote {
-        font-size: 1.3333;
+        font-size: 1.3333em;
         /* 24px/18px */
     }
     .testimonials__source {
-        font-size: 1.1111;
+        font-size: 1.1111em;
         ;
         /* 20px/18px */
     }
@@ -315,7 +315,7 @@ facts
     background-position: 0 -132px;
 }
 
-@media (min-wdith: 45em) {
+@media(min-width: 45em) {
     .facts-intro__heading {
         font-size: 1.8889em;
         /* 34px/18px */
@@ -399,7 +399,7 @@ footer
 .footer__info a:focus,
 .footer__info a:hover,
 .footer__info a:active {
-    border-bottom: .15 solid;
+    border-bottom: .15em solid;
 }
 
 .footer__info a:focus { color: #fff; }
